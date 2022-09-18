@@ -1,0 +1,190 @@
+>>>list
+>creating list 
+
+input: different type
+      a=["vinod","chinni",143,623]
+      print(a)
+
+output:
+      ["vinod","chinni",143,623] 
+
+input:same type
+      b=[1,2,3,4,5,6]
+      print(b)
+output:
+      [1,2,3,4,5,6]
+
+>index
+
+ input:
+       a=["vinod","chinni",143,623]
+         print(a[1])
+         print(a[2])
+         print(a[-4])
+output:
+       chinni
+       143
+       vinod
+
+>slicing
+
+input:  b=[1,2,3,4,,5,6]
+        print(b[0:5:2])
+        print(b[-3:])
+output:[1, 3, 5]
+       [4, 5, 6]
+
+
+>append
+       
+ input: b=[1,2,3,4,5,6]
+        print(b) 
+        b.append(7)
+        print(b)
+        b.append(9)
+        print(b)
+
+ output:[1, 2, 3, 4, 5, 6]
+        [1, 2, 3, 4, 5, 6, 7]
+        [1, 2, 3, 4, 5, 6, 7, 9]
+
+>concatenation
+    input : b=[1,2,3,4]
+            print(b)
+            a=[6,7,8]
+            print(a)
+            print(a+b)
+ output : [1, 2, 3, 4]
+          [6, 7, 8]
+          [6, 7, 8, 1, 2, 3, 4]
+
+>deleting list
+ input:b=[1,2,3,4,5,6]
+       print(b)
+       del(b[2])
+       print(b)
+       del[b]
+       print(b)
+ output:[1, 2, 3, 4, 5, 6]
+        [1, 2, 4, 5, 6]
+        Traceback (most recent call last):
+          File "main.py", line 6, in <module>
+             print(b)
+         NameError: name 'b' is not defined
+*********************************************************
+>>>Tuple
+>creating tuple , index,slicing
+ input : a=(1,2,3,4,5,6,7,8,9)
+         print(a)    
+         print(a[1])
+         print(a[-6])
+         print(a[0::2])
+         b=(11,12,13)
+         print(a+b)
+ output : 
+         (1, 2, 3, 4, 5, 6, 7, 8, 9)
+          2
+          4
+         (1, 3, 5, 7, 9)
+         (1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13)
+ >append
+ input : b.append[4444]
+         print(b)
+ output : Traceback (most recent call last):
+           File "main.py", line 2, in <module>
+              b.append[444]
+           NameError: name 'b' is not defined
+ >concatenation
+    input : b=(1,2,3,4)
+            print(b)
+            a=(6,7,8)
+            print(a)
+            print(a+b)
+ output : (1, 2, 3, 4)
+          (6, 7, 8)
+          (6, 7, 8, 1, 2, 3, 4)
+ >deleting
+   input : b=(1,2,3,4)
+           del(b)
+           print(b)
+  output : Traceback (most recent call last):
+          File "main.py", line 3, in <module>
+            print(b)
+          NameError: name 'b' is not defined
+**************************************************************
+>>dictionary
+>creating dictionary,index
+   input : D={'name':'vinod','age':20,'branch':'cse'}
+           print(D)
+           print(D['name'])
+           D={'name':'vinod,chinni'}
+           print(D)
+           print(D['name'])
+  output :{'name': 'vinod', 'age': 20, 'branch': 'cse'}
+          vinod
+          {'name': 'vinod,chinni'}
+          vinod,chinni
+
+>update,addinng
+  input : D={1:11,2:22,3:33,4:44,5:55}
+          print(D)
+          D[1]=143
+          print(D)
+          D[6]=66
+          print(D)
+output :{1: 11, 2: 22, 3: 33, 4: 44, 5: 55}
+        {1: 143, 2: 22, 3: 33, 4: 44, 5: 55}
+        {1: 143, 2: 22, 3: 33, 4: 44, 5: 55, 6: 66}
+
+>pop,delet dictionary
+ input : D={1:11,2:22,3:33}
+         print(D.pop(3))
+         print(D.popitem())
+         del D
+         print(D)
+output :33
+        (2, 22)
+        Traceback (most recent call last):
+        File "main.py", line 5, in <module>
+            print(D)
+        NameError: name 'D' is not defined
+******************************************************************
+>>set
+>creating set,changing list to set
+ input : s={"vinod",1,2,3}
+         print(s)
+         list=[2,3,4]
+         A=set(list)
+         print(A)
+         print(type(A))
+
+output : {'vinod', 1,2,3}
+         {2, 3, 4}
+         <class 'set'>
+
+>append,making string to set
+ input : B={1,2,3,4}
+         print(B)
+         B.add(5)
+         print(B)
+         x=("vinod")
+         print(set(x))
+
+output :{1, 2, 3, 4}
+        {1, 2, 3, 4, 5}
+        {'i', 'n', 'v', 'd', 'o'}
+
+>set operation
+ input :a={1,2,3,4,5}
+        b={5,6,7,8}
+        print(a|b)
+        x=a.union(b)
+        print(x)
+        print(a&b)
+        print(a-b)
+        print(b-a)
+ output : {1, 2, 3, 4, 5, 6, 7, 8}
+          {1, 2, 3, 4, 5, 6, 7, 8}
+          {5}
+          {1, 2, 3, 4}
+          {8, 6, 7}
